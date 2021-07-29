@@ -1,0 +1,73 @@
+:root {
+    --family: 'Amatic SC', cursive;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: ivory;
+    list-style-type: none;
+}
+
+
+ li a {
+     color: black;
+     text-shadow: lightgray;
+     text-decoration: none;
+     font-size: xx-large;
+     font-weight: bolder;
+ }
+
+
+body {
+    font-family: var(--family);
+    color:white;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../media/img/dark\ hip\ hop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}  
+
+
+h1 {
+    text-align: center;
+}
+
+
+h1, h2 {
+    font-family: var(--family);
+    font-size: xx-large;
+    font-weight: bolder;
+    transition: transform 1s;
+}
+
+
+.album {
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+    width: 95%;
+}
+
+
+footer {
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+
+a:hover {
+    border-bottom: 3px solid red;
+ }
+
+
+ h2:hover  {
+    transform: scale(1.2, 1.2);
+
+
+}
+
+
+ @media screen and (max-width: 425px){
+    article {width: 85%;}
+}

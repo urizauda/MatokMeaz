@@ -1,0 +1,111 @@
+:root {
+    --family: 'Amatic SC', cursive;
+}
+
+
+body {
+    background-image: url(../media/img/m-4_M8uIfPEZw-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--family);
+    color:white;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: ivory;
+    list-style-type: none;
+}
+
+
+li a {
+     color: black;
+     text-shadow: lightgray;
+     text-decoration: none;
+     font-size: xx-large;
+     font-weight: bolder;
+ }
+
+
+h1, h2, a {
+     font-family: var(--family);
+     font-size: xx-large;
+     font-weight: bolder;
+}
+
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px dimgrey;
+}
+
+
+p {
+    font-size: 30px;
+}
+
+
+.tour {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 98%;
+    row-gap: 10vh;
+    column-gap: 2vw;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 19%;
+    height: 67vh;
+    border-radius: 25%;
+    background-color: black;
+    text-align: center;
+    transition: transform 2s;
+    justify-content: center;
+}
+
+
+p {
+    width: 82%;
+    height: 40vh;
+}
+
+img {
+    width: 80%;
+    height: 35vh;
+    border-radius: 50%;
+    margin-top: 7%;
+}
+
+a:hover {
+    border-bottom: 3px solid red;
+ }
+
+
+footer {
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+.cards:hover  {
+    transform: rotate(5deg);
+}
+
+
+
+@media  screen and (max-width: 768px) {
+    .cards {width: 24%; height: auto;}
+    
+ }
+
+ @media  screen and (max-width: 425px) {
+ 
+    .cards {width: 70%; width: 80%;}
+       p {font-size: 20px;}
+   }
+

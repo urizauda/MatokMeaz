@@ -1,0 +1,188 @@
+
+                                                
+:root {
+    --family: 'Amatic SC', cursive;
+} 
+
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../media/img/anthony-intraversato-xr43RescWSA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--family);
+    color:white;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: ivory;
+    list-style-type: none;
+    }
+
+
+a {
+     color: black;
+     text-shadow: lightgray;
+     text-decoration: none;
+     font-family: var(--family);
+     font-size: xx-large;
+     font-weight: bolder;
+ }
+
+
+.audio {
+     background-color: lightgray;
+     display: flex;
+     justify-content: center;
+}
+
+
+.insideLinks {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-right: 1%;
+}
+
+#aboutRight {
+    width: 60%;
+}
+
+
+#aboutLeft {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#aboutLeft img {
+    border-radius: 50%;
+    width: 20vw;
+    height: 40vh;
+    margin-top: 7vh;
+    animation: slideUpDown 4s  alternate ease-in-out;
+    transition: transform 2s;
+    box-shadow: 5px 5px 5px white;
+}
+
+
+.about {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-right: 1%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+
+.about h1 {
+    animation: slideFromRight 4s alternate ease-in-out;
+}
+
+
+.about p {
+    animation: slideFromLeft 4s alternate ease-in-out;
+}
+
+
+.about a, .insideLinks a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.videoClips {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+}
+
+
+iframe {
+    border: 1px solid white;
+    box-shadow: 8px 8px 8px gray;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+
+.contact h1 {
+    text-align: right;
+}
+
+
+.store {
+    width: 98vw;
+    height: 35vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap: 10%;
+    column-gap: 20%;
+}
+
+
+.card img {
+    width: 20vw;
+    height: 48%;
+}
+
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    background-color: black;
+}
+
+
+  footer {
+    background-color: lightgoldenrodyellow;
+    color: black;
+  }
+
+
+  a:hover {
+    border-bottom: 3px solid red;
+ }
+
+ #aboutLeft img:hover {
+    transform: rotate(359deg);
+}
+
+
+@keyframes slideFromLeft {
+    0%{transform: translateX(-1500px);}
+    100%{transform: translateX(0px);}
+}
+
+@keyframes slideFromRight {
+    0%{transform: translateX(2000px);}
+    100%{transform: translateX(0px);}
+}
+
+@keyframes slideUpDown {
+      0%{transform: translateY(-1000px);}
+      100%{transform: translateY(0px);}
+}
+
+
+@media screen and (max-width: 768px){
+    iframe {width: 45vw;}
+    .about {margin: 5%;}
+}
+
+@media screen and (max-width: 425px){
+    iframe {width: 90vw;}
+    .card image {width: 24vw;}
+    .about {margin: 9%;}
+}
